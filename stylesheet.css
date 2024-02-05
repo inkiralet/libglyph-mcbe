@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+}
+
+body {
+    background-color: #001219;
+}
+
+#imageselector {
+    color: white;
+    background-color: #005f73;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+#container {
+    text-align: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#modalcontainer {
+    text-align: center;
+    align-content: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+#modalchild {
+    color: white;
+    background-color: #005f73;
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+canvas {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}

@@ -81,8 +81,10 @@ function showMessage(message) {
 
 function symbol_gen(index, x, y) {
     if (x > 9)
-        x = "abcdef".charAt(x - 9);
-
+        x = "abcdef".charAt(x - 10);
+    if (y > 9)
+        y = "abcdef".charAt(y - 10);
+    
     return [String.fromCodePoint(parseInt(`0xE${index ?? 2}${y}${x}`, 16)), `0xE${index ?? 2}${y}${x}`];
 }
 

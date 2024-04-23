@@ -80,8 +80,10 @@ function showMessage(message) {
 }
 
 function symbol_gen(index, x, y) {
-    if (x > 9)
-        x = "abcdef".charAt(x - 9);
+    const chars = "0123456789abcdef"
+    
+    x = chars.charAt(x)
+    y = chars.charAt(y)
 
     return [String.fromCodePoint(parseInt(`0xE${index ?? 2}${y}${x}`, 16)), `0xE${index ?? 2}${y}${x}`];
 }
